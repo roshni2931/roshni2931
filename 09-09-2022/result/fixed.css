@@ -1,0 +1,20 @@
+
+h1{
+    position:sticky;
+    background-color: green;
+     border:2px solid blue;
+    
+}
+h2{
+    position:fixed;
+    background-color: green;
+    
+    border:2px solid blue;
+    
+}
+b{
+    border:2px solid red;
+    position:fixed;
+    left:0px;
+    top:0px;
+}

@@ -1,0 +1,13 @@
+h1{
+    display:inline;
+    border:10px solid red;
+    margin:20px;
+}
+li{
+    display:inline-block;
+    border:5px solid red;
+    background-color:pink;
+    margin:100px;
+    padding:20px;
+
+}
