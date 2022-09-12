@@ -1,0 +1,31 @@
+/* div of task1 starts*/
+.div1{
+    position:relative;
+    width:290px;
+    height:290px;
+    display:block;
+    border: 10px solid blue;
+    background-color: skyblue;
+    font-size: 20px;
+    margin-left:50px;
+}
+.heading1{
+    position:absolute;
+    left:20px;
+}
+.div2{
+    position:relative;
+    width:290px;
+    height:290px;
+    display:block;
+    border: 10px solid blue;
+    background-color: skyblue;
+    font-size: 20px;
+    margin-left:50px;
+    margin-top:20px;
+}
+.heading2{
+    position:absolute;
+    left:20px;
+}
+/*task 1 ends*/
