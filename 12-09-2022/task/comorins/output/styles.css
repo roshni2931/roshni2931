@@ -4,7 +4,7 @@ form{
     top:10%;
     
 }
-li{
+.li{
     display:inline-block;
     color:#fff;
     margin-right:20px;
@@ -41,20 +41,35 @@ section{
     background-color: #FAA61A;
     margin-left:600px;
 }
-.div1 h2{
-    color: red;
-    
+.div1{
+    color:red;
+    background-color: #FAA61A;
+    display:inline-block;
+    width:47%;
+    margin-top: 40px;
     
 }
-.div2 h2{
+.div2{
     color:red;
+    background-color: #FAA61A;
+    display:inline-block;
+    width:47%;
+    margin-top: 40px;
 }
 .ulli{
     background-color: #FAA61A;
+    color:black;
 }
 .olli{
     background-color: #FAA61A;
+    color:black;
 }
+img{
+    margin-top:20px;
+    width:65%;
+    height:700px;
+}
+
 
  
 
