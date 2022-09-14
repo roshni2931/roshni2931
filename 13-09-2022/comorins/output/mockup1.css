@@ -1,0 +1,47 @@
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+nav{
+    
+    background-color: gray;
+    text-align: center;
+    color: aliceblue;
+    
+}
+nav h2{
+    
+    padding: 10px;
+
+}
+section{
+    background-color: darkorange;
+}
+.slideshow{
+    
+    text-align: center;
+    background: black;
+    color: aliceblue;
+    margin:45pxpx;
+}
+.slideshow h2{
+    padding: 50px;
+}
+.column{padding: 33px;
+    width: 26.3%;
+    height: 144px;
+    margin-left: 43px;
+    background-color: red;
+    display: inline-block;
+}
+footer{
+    
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+footer h2{
+    padding: 10px;
+}

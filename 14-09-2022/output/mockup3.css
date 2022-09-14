@@ -1,0 +1,81 @@
+body{
+    background-color: gray;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+    
+}
+ul{
+    background-color: hotpink;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline; 
+    
+}
+ul .ib{    
+    display: inline-block;
+    margin-right: 47px;
+}
+.form{
+    
+    display: inline-block;
+    background-color: hotpink;
+    padding-bottom: 18px;
+    padding-top: 14px;
+    width: 495px;
+}
+textarea{
+    height: 20px;
+    
+}
+input{
+    width: 70px;
+    background-color: black;
+    color: aliceblue;
+}
+.content{
+    width: 73%;
+    background-color: aliceblue;
+    padding-top: 5px;
+    margin-top: 19px;
+    display: inline-block;
+}
+h2{
+    text-align: center;
+}
+.sidebar{
+    
+    width: 24%;
+    display: inline-block;
+    background-color: hotpink;
+    padding-bottom: 166px;
+    padding-left: 24px;
+    margin-top: 19px;
+    margin-left: 2px;
+    vertical-align: top;
+}
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+h3{
+    margin-left: 20px;
+}
+.side{
+    color: blue;
+}
+footer{
+    
+   
+    margin-top: 22px;
+    background-color: white;
+}
+footer h4{
+    padding: 20px;
+}
+.parent{
+    width: 80%;
+    margin: 0 auto;
+}
