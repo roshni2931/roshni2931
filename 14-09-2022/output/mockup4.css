@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkgray;
+    margin: 10px;
+}
+header{
+    background-color: antiquewhite;
+    color: black;
+    text-align: center;
+    padding: 38px;
+    margin: 6px;
+}
+.nav{
+    display: inline-block;
+    margin-right: 55px;
+}
+nav{
+    margin: 5px;
+    background-color: black;
+    color: aliceblue;
+    padding: 12px;
+}
+ul :last-child{
+    margin-left: 996px;
+    margin-right: 0px;
+}
+.titleheading{
+    width: 69%;
+    background-color:darkgray;
+    margin: 6px;
+    display: inline-block;
+    vertical-align: top;
+}
+.child-1{
+    background-color: antiquewhite;
+    
+    display: inline-block;
+    
+}
+.title{
+    width: 96%;
+    height: 159px;
+    margin-left: 18px;
+}
+.child-2{
+        
+    background-color: antiquewhite;
+    display: inline-block;
+    margin-top: 12px;
+    
+    
+}
+.sidebar{
+    display: inline-block;
+    background-color:darkgray;
+    width: 29%;
+    margin-left: 5px;
+    margin-top: 6px;
+}
+.sidebar-1{
+    background-color: white;
+       
+    
+    
+}
+.sidebar-2{
+    background-color: white;
+    
+}
+.sidebar-3{
+    background-color:white;
+    
+}
+.side{
+    margin-left: 18px;
+    height: 127px;
+    width: 90%;
+    
+}
+b{
+    margin-left: 18px;
+    margin-top:5px;
+}
+.th{
+    margin-left: 18px;
+}
+h3{
+    margin-left: 20px;
+}
+h5{
+    margin-left:20px;
+}
+footer{
+    background-color: aliceblue;
+    padding: 16px;
+    margin: 5px;
+}

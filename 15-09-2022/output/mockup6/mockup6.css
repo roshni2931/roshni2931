@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    paddding:0
+}
+ul{
+text-align: center;
+}
+li{
+    display:inline-block;
+    color: #FFFEFE;
+    margin-right: 52px;
+    font-size:27px;
+}
+nav{
+    background: #333333;
+    padding-top: 48px;
+    padding-bottom: 49px;
+}
+img{
+    width: 218px;
+    height: 146px;
+    margin-top: 26px;
+    margin-left: 114px;
+}
+h3{
+    float: right;
+    margin-right: 69px;
+    margin-top: 127px;
+    text-align: right;
+}
+.header :last-child{
+    margin-top:22px;
+}
