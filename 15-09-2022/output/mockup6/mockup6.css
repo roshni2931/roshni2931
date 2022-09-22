@@ -2,6 +2,9 @@
     margin:0;
     paddding:0
 }
+body{
+    font-family: roboto;
+}
 ul{
 text-align: center;
 }
@@ -16,18 +19,57 @@ nav{
     padding-top: 48px;
     padding-bottom: 49px;
 }
-img{
+.logo{
     width: 218px;
-    height: 146px;
     margin-top: 26px;
     margin-left: 114px;
 }
 h3{
     float: right;
     margin-right: 69px;
-    margin-top: 127px;
+    margin-top: 75px;
     text-align: right;
+    font-weight: 400;
 }
-.header :last-child{
+h2{
+    color: #6D9D34;
+    font-weight: 400;
+    
+}
+h1{
+    font-weight: 400;
+}
+.header:last-child{
     margin-top:22px;
 }
+.header{
+    border-bottom: 1px solid black;
+    padding-bottom: 52px;
+}
+.section-1 .box-1{
+    display:inline-block;
+    margin-right: 32px;
+    margin-top: 72px;
+}
+p{
+    text-align: left;
+    font-size: 23px;
+    font-weight: 300px;
+}
+.rectangle{
+    border: 1px solid black;
+    padding: 12px 16px;
+}
+.section-1:first-child{
+    margin-left:34px;
+}
+.section-2 .box-1{
+    display:inline-block;
+    margin-right: 54px;
+    
+}    
+.section-2:first-child{
+    margin-left:48px;
+    margin-right: 0px;
+}
+
