@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+}
+.karka-logo{
+    margin-right: 182px;
+    margin-left: 62px;
+    padding: 21px 0px;
+}
+.searchbar{
+    margin-left: 162px;
+}
+.li{
+    font-family: Roboto;
+    font-size: 23px;
+    margin-right: 20px;
+}
+.ellipse{
+    text-align: center;
+}
+.student{
+    font-size: 73px;
+    font-weight: 500;
+    font-family: 'Roboto';
+}
+.add{
+    
+    color: white;
+}
+.address{
+    border-bottom:1px solid white;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Poppins';
+    margin-top: 100px;
+    width:154px;
+}
+.address-para{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: #AEAEAE !important;
+
+}
+footer{
+    background-color: black;
+    margin-top: 222px !important;
+}
+.section-para{
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.our-mission{
+    font-family: Roboto;
+    font-size: 73px;
+    font-weight: 500;
+}
+
+.mission-img{
+    margin-left: 43px;
+    margin-top: 271px;
+}
+.mission-div{
+    margin-top:115px;
+}
+.mission-div-2{
+    margin-top: 71px;
+}
+.copyright{
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+    color: #AEAEAE;
+    margin-top: 126px;
+}
+.shadow{
+    box-shadow: -10px 0px 3px 0px #aaa;
+}
