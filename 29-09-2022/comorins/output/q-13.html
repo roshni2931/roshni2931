@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="num1"type="number"/><br>
+    <input id="num2"type="number"/><br>
+    <input id="num3"type="number"/>
+    <button onclick="findLargest()">Compare</button>
+    <script>
+        let num1,num2,num3;
+        function findLargest(){
+            num1=document.getElementById("num1").value;
+            num2=document.getElementById("num2").value;
+            num3=document.getElementById("num3").value;
+            if(num1>num2 && num1>num3){
+                console.log("num1 is the largest");
+            }
+            else if(num2>num1 && num2>num3){
+                console.log("num2 is the largest");
+            }
+            else if(num3>num1 && num3>num2){
+                console.log("num3 is the largest");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=let total=0; initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input id="item" type="text"/>
+    <button onclick="add()">Add</button>
+    <ul id="todo"></ul>
+    <script>
+        let list=[];
+        function add()
+            {
+            let todo=document.getElementById("item").value;
+            list.push(todo);
+            console.log(list); 
+            display(list);
+            document.getElementById("item").value="";  
+            }
+        function display(list_arr)
+            {
+            let ele="";
+            for(let i=0;i<list_arr.length;i++)
+            {
+                ele=ele+"<li>"+list_arr[i]+"</li>";
+            }
+            document.getElementById("todo").innerHTML=ele
+            
+        }
+        
+    </script> -->
+    <!-- <input id="item"type="text"/>
+    <button onclick="add()">Add</button>
+    <ul id="todo"></ul>
+    
+    <script>
+        let list=[];
+        function add()
+        {
+            let todo=document.getElementById("item").value;
+            list.push(todo);
+            console.log(list);
+            display(list);
+            document.getElementById("item").value="";
+        }
+        function display(list_arr)
+        {
+            let ele="";
+            for(let i=0;i<list_arr.length;i++)
+            {
+                ele=ele+"<li>"+list_arr[i]+"</li>";
+            }
+                document.getElementById("todo").innerHTML=ele
+            
+
+
+        }
+    </script> -->
+    <script>
+        let total=0;
+        let percentage;
+        let count=0;
+        let education=[
+            {insitute:"ACCET",
+             mark:99
+
+            },
+            {
+             institude:"SMRV",
+             mark:99
+            },
+            {
+                institute:"SLB",
+                mark:99
+            }]
+            for(i=0;i<education.length;i++){
+                console.log(education[i].mark);
+                total=total+education[i].mark;
+                count++;
+            }
+            console.log(total);
+            percentage=total/count;
+            console.log(percentage);
+    </script>
+
+    
+</body>
+</html>

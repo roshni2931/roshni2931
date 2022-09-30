@@ -7,19 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-   
     <script>
-        let list=[1,2,3,4];
-        let gr=0;
-        function largeOfFour(){
-         for(let i=0;i<gr;i++){
-            if(list[i]>gr){
-                gr=list[i];
-                
+        let list=[1,2,3,4,5];
+        let large=0;
+        function largenum()
+        {
+            for(let i=0;i<list.length;i++)
+            {
+            if(list[i]>large)
+            {
+            large=list[i];
+            }
             }
             
-         } 
-        }console.log(gr);
+        }
+        console.log(large);
     </script>
 </body>
 </html>
