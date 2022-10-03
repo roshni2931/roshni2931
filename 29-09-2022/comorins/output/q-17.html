@@ -7,19 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <input id="num" type="text"/>
-    <button onclick="checkInRange()">check</button>
     <script>
-        let a;
-        function checkInRange(){
-            a=document.getElementById("num").value;
-            if(a>=90 && a<=100){
-                console.log("Between the range");
+        let year=2000;
+        function checkLeapYear(){
+            if(year%400==0){
+                console.log("leap year");
             }
             else{
-                console.log("Outside th range");
+                console.log("not a leap year");
             }
         }
+        checkLeapYear(year);
     </script>
 </body>
 </html>

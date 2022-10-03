@@ -8,20 +8,19 @@
 </head>
 <body>
     <script>
-        let list=[];
-        function printArray(list){
-        let num=1;
-        
-            for(i=0;i<list.length;i++)
+        let list=[["apple","banana"],["carrot","Mango"],["Orange","Pear","Papaya"]];
+        function printArray(){
+            for(let i=0;i<list.length;i++)
             {
                 for(j=0;j<list.length;j++)
                 {
                     console.log(list[i][j]);
-                }     
-            }
-            return num;
-        }
-        printArray([["apple","banana"],["carrot","Mango"],["Orange","Pear","Papaya"]]);
+                }
+            }   
+             
+        } 
+        printArray(list);
+        
     </script>
 </body>
 </html>

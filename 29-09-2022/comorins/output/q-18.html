@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=-1;
+        function findGrade(){
+            if(a>=90 && a<=100){
+                console.log("S grade");
+            }
+            else if (a>=80 && a<90){
+                console.log("A grade");
+            }
+            else if (a>=70 && a<80){
+                console.log("B grade");
+            }
+            else if (a>=60 && a<70){
+                console.log("C grade");
+            }
+            else if (a>=50 && a<60){
+                console.log("D grade");
+            }
+            else if (a>=40 && a<50){
+                console.log("E grade");
+            }
+            else if (a<40&& a>0){
+                console.log(" Student has failed");
+            }
+            else {
+                console.log("Invalid mark");
+            }
+        }findGrade(a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="item" type="text"/>
+    <button onclick="add()">add</button>
+    <ul id="todo"></ul>
+    <script>
+        
+        if(!localStorage.getItem("todos")){
+            localStorage.setItem("todos",JSON.stringify([]));
+        }
+
+        let list=JSON.parse(localStorage.getItem("todos"));
+        function add()
+            {
+            let item=document.getElementById("item").value;
+            list.push(item);
+            console.log(list); 
+            localStorage.setItem("todos",JSON.stringify(list));
+            display(list);
+            let item=document.getElementById("item").value="";
+            }
+        function display(){
+            let ele="";
+            let local_list=JSON.parse(localStorage.getItem("todo"));
+            for(let i=0;i<list.length;i++)
+            {
+                ele=ele+"<li>"+list[i]+"</li>";
+            }
+                document.getElementById("todo").innerHTML=ele
+            
+        }
+
+    </script>
+</body>
+</html>

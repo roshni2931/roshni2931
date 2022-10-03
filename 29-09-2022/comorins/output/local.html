@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="test()">click</button>
+    <script>
+        
+        function test()
+        {
+            localStorage.setItem("name","Roni"); //store in local storage
+            sessionStorage.setItem("name","Dani"); //will execute only on that session (tab)
+        }
+        // array->string    ----> JSON.stringify(array_name)   ----> ["\a","\b","c"] localStorage.setItem("name",JSON.stringify(array_name))
+        // string->array    ----> JSON.parse(array_name)       ----> ["a","b","c"] 
+        // to read value-->"localStorage.getItem("name")""
+        // let my_name=localStorage.getItem("name");
+        // let arr_name=JSON.parse("my_name");
+
+        
+
+        
+    </script>
+</body>
+</html>
