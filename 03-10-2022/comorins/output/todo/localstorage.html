@@ -17,7 +17,7 @@
             localStorage.setItem("todos",JSON.stringify([]));
         }
 
-        let list=JSON.parse(localStorage.getItem("todos"));
+        let list=JSON.parse(localStorage.getItem("todos"))
         function add()
             {
             let item=document.getElementById("item").value;
@@ -25,17 +25,23 @@
             console.log(list); 
             localStorage.setItem("todos",JSON.stringify(list));
             display(list);
-            let item=document.getElementById("item").value="";
+            document.getElementById("item").value="";
             }
         function display(){
             let ele="";
             let local_list=JSON.parse(localStorage.getItem("todo"));
             for(let i=0;i<list.length;i++)
             {
-                ele=ele+"<li>"+list[i]+"</li>";
+                ele=ele+"<li>" +list[i]+"<button>"+"Remove item" + "</button>"+"</li>" ;
+                console.log(ele);
             }
                 document.getElementById("todo").innerHTML=ele
             
+        }
+        function removeItem(){
+            let new_list=JSON.parse(localStorage.getItem("todo"));
+
+
         }
 
     </script>
