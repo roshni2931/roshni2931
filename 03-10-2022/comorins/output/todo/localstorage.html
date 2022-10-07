@@ -30,6 +30,7 @@
         function display(){
             let ele="";
             let local_list=JSON.parse(localStorage.getItem("todo"));
+            
             for(let i=0;i<list.length;i++)
             {
                 ele=ele+"<li>" +list[i]+"<button>"+"Remove item" + "</button>"+"</li>" ;
@@ -40,11 +41,18 @@
         }
         function removeItem(){
             let new_list=JSON.parse(localStorage.getItem("todo"));
-            new_list.splice(1,1);
+            list.splice(index,1);
+            
+            console.log(list);
+            localStorage.setItem("new_list")
+
 
 
 
         }
+        removeItem();
+
+        
 
     </script>
 </body>
