@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: purple;
+    padding: 20px;
+}
+.hdiv{
+    display: inline-block;
+
+}
+.webdiv{
+    font-family: cursive;
+    color: gold;
+}
+.logindiv{
+    margin-left: 130px;
+}
+.cartdiv{
+    color: gold;
+    margin-left: 60px;
+    font-family: fantasy;
+}
+.profilediv{
+    color: gold;
+    margin-left: 60px;
+    font-family: fantasy;
+}
+.box{
+    position:relative;
+    width: 320px;
+}
+.s-icon{
+    position: absolute;
+    right: 690px;
+}
+.login{
+    background: azure;
+    font-family: fantasy;
+}
+.banner img {
+    width: 100%;
+}
