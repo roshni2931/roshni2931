@@ -31,9 +31,12 @@ header{
     position:relative;
     width: 320px;
 }
+.searchdiv{
+    position:relative;
+}
 .s-icon{
     position: absolute;
-    right: 690px;
+    right: 7px;
 }
 .login{
     background: azure;
