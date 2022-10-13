@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Index</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,30 +63,121 @@
             </button>
           </div>
           </div>
-          <div class="product">
-            <ul class="listproduct">
+          <div id="product_list">
+            
 
-            </ul>
+            </div>
+
+            
           </div>
           <script>
             let product={
-              title=[{
-              id:1,
-              prtname:"books",
-              url:"https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3.png",
-              price:2000
-            },
-            {
-              id:2,
-              prtname:"groceries",
-              url:"images/groceries.jpg",
-              price:
-              
-
-          }]
+              mobile:[{
+                        id:1,
+                        productname:"SAMSUNG GALAXY F13",
+                        img:"https://rukminim1.flixcart.com/image/416/416/l4n2oi80/mobile/x/o/a/-original-imagfhu75eupxyft.jpeg?q=70,",
+                        price:"9,500",
+                        specification:""
+                      },
+                      {
+                        id:2,
+                        producttname:"VIVO Y21",
+                        img:"https://rukminim1.flixcart.com/image/416/416/ksj9dow0/mobile/g/i/o/y21-v2111-vivo-original-imag627uhcnzx7mn.jpeg?q=70,",
+                        price:"12,987"
+                      },
+                      {
+                        id:3,
+                        productname:"REDMI 10",
+                        img:"https://rukminim1.flixcart.com/image/416/416/l0tweq80/mobile/x/f/u/-original-imagcgtghym8theg.jpeg?q=70",
+                        price:"8,549"
+                      }]
+                    }
+                    // console.log(product);
+                    if(!localStorage.getItem("product")){
+            localStorage.setItem("product",JSON.stringify([]));
             
-   
-         </script>   
+            }
+          
+          let item=JSON.parse(localStorage.getItem(product));
+          // console.log(item);
+          function show_product(){
+            document.getElementById("product_list").innerHTML=stringify(product);
+            console.log(product_list);
+            for(let i=0;i<product_list.length;i++){
+              let id_val=JSON.parse(localStorage.getItem("product"));
+              // console.log(id_val);
+            }
+            
+          }
+
+          
+          </script> 
+          <footer class="bg-dark ">
+            
+              <div class="row">
+                <div class="col-2">
+                  <p>ABOUT</p>
+                  <ul>
+                    <li>Contact us</li>
+                    <li>About us</li>
+                    <li>Careers</li>
+                    
+                  </ul>
+                </div>
+                <div class="col-2">
+                  <p>HELP</p>
+                  <ul>
+                    <li>Payments</li>
+                    <li>Shipping</li>
+                    <li>Cancellations and Returns</li>
+                  </ul>
+                </div>
+                <div class="col-2">
+                  <p>POLICY</p>
+                  <ul>
+                    <li>Return policy</li>
+                    <li>Terms of use</li>
+                    <li>Privacy</li>
+                  </ul>
+                </div>
+                <div class="col-2">
+                  <p>SOCIAL</p>
+                  <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                  </ul>
+                </div>
+              
+            <div class=" mailus col-2">
+              <p>MAIL US</p>
+              <p>Buildings Alyssa, Begonia
+                Clove Embassy Tech Village,
+                Outer Ring Road, Devarabeesanahalli Village,
+                Bengaluru, 560103,
+                Karnataka, India</p>
+            </div>
+            <div class="col-2">
+              <p>Reigistered Office Address</p>
+              <p>Buildings Alyssa, Begonia &
+                Clove Embassy Tech Village,
+                Outer Ring Road, Devarabeesanahalli Village,
+                Bengaluru, 560103,
+                Karnataka, India                
+                CIN : U51109KA2012PTC066107
+                Telephone: 044-45614700</p>
+            </div>
+            
+
+            </div>
+           </div>
+            </div>
+
+              <hr>
+              <div class="col text-center">© 2007-2022 Flipkart.com</p></div>
+              
+            </div>
+             </footer>  
           
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

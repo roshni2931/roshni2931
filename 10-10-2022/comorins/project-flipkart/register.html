@@ -5,16 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link href="css/styleflip.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 <body>
-    <h2>Sign up</h2>
-    Your Name<br><input type="text" class="form-control"id="name" onkeyup="addDetails('name',this.value)"/><br>
-    Your Email<br><input type="email" class="form-control"id="email" onkeyup="addDetails('email',this.value)"/><br>
-    Your password<br><input type="password" class="form-control"id="pwd" onkeyup="addDetails('password',this.value)"/><br>
-    Confirm password<br><input type="password" class="form-control"id="confirmpwd"onkeyup="addDetails('cfmpassword',this.value)"/><br> 
+    <header>
+        <div class="text-center">
+         <div class="hdiv webdiv">
+             <h5>WebMart</h5>
+         </div>
+         <div class="hdiv searchdiv">
+             <input class="box"type="text" placeholder="Search..">
+             <i class="s-icon bi bi-search"></i>
+         </div>
+         
+         <div class="hdiv logindiv">
+           <button class="login btn btn"><a href="register.html">Register</a></button>
+       </div>
+       <div class="hdiv logindiv">
+         <button class="login btn btn"><a href="login.html">Login</a></button>
+       </div>
+ 
+         <div class="hdiv cartdiv">
+             <i class="bi bi-cart">Cart</i>
+         </div>
+         <div class="hdiv profilediv">
+             <i class="bi bi-person">Profile</i>
+         </div>
+        </div>
+        </header>
+    <div class="container" style="width:35%">
+    <h2 class="text-center"><b>Sign up</b></h2>
+    Your Name<br><input type="text" class="form-control"id="name" onkeyup="add('name',this.value)"/><br>
+    Your Email<br><input type="email" class="form-control"id="email" onkeyup="add('email',this.value)"/><br>
+    Your password<br><input type="password" class="form-control"id="pwd" onkeyup="add('password',this.value)"/><br>
+    Confirm password<br><input type="password" class="form-control"id="confirmpwd"onkeyup="add('cfmpassword',this.value)"/><br> 
     
     <input type="checkbox" />
     I agree all statements in <a href="#!">Terms of service</a>
@@ -22,13 +49,14 @@
                         
     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
         <button type="button" onclick="display()"class="btn btn-primary btn-lg">Register</button>
-    </div>
+    </div><br>
     <code id="obj_data"></code>
+    </div>
     
 </body>
 <script>
     let user={};
-    function addDetails(key,value,index,indexkey){
+    function add(key,value,index,indexkey){
             // alert(value);
             if(index==null && indexkey==null)
             {
@@ -45,18 +73,20 @@
             // display();
         }
         function display(){
-
             document.getElementById("obj_data").innerHTML=JSON.stringify(user);
-            if(!localStorage.getItem("User")){
-            localStorage.setItem("User",JSON.stringify([]));
+            if(!localStorage.getItem("users")){
+            localStorage.setItem("users",JSON.stringify([]));
             }
-            let stored_user=JSON.parse(localStorage.getItem("User"));
-            stored_user.push(user);
-            localStorage.setItem("User",JSON.stringify(stored_user));
+            let register_user=JSON.parse(localStorage.getItem("users"));
+            register_user.push(user);
+            localStorage.setItem("users",JSON.stringify(register_user));
             
             }
             
         
     
 </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </html>
