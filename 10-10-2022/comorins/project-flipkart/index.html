@@ -20,7 +20,9 @@
             <h5>WebMart</h5>
         </div>
         <div class="hdiv searchdiv">
-            <input class="box"type="text" placeholder="Search..">
+          <input class="box" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+          
             <i class="s-icon bi bi-search"></i>
         </div>
         
@@ -44,13 +46,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/banner-7.webp" class="d-block w-100" alt="...">
+                <img src="https://img.freepik.com/free-psd/horizontal-banner-online-fashion-sale_23-2148585404.jpg?w=2000" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="images/banner-6.webp" class="d-block w-100" alt="...">
+                <img src="https://img.freepik.com/free-psd/horizontal-banner-template-online-sports-sale_23-2148561286.jpg?w=2000" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="images/banner-8.webp" class="d-block w-100" alt="...">
+                <img src="https://img.freepik.com/free-psd/colourful-banner-sale-template_1393-167.jpg?w=2000" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -71,44 +73,191 @@
             
           </div>
           <script>
-            let product={
-              mobile:[{
-                        id:1,
-                        productname:"SAMSUNG GALAXY F13",
-                        img:"https://rukminim1.flixcart.com/image/416/416/l4n2oi80/mobile/x/o/a/-original-imagfhu75eupxyft.jpeg?q=70,",
-                        price:"9,500",
-                        specification:""
-                      },
-                      {
-                        id:2,
-                        producttname:"VIVO Y21",
-                        img:"https://rukminim1.flixcart.com/image/416/416/ksj9dow0/mobile/g/i/o/y21-v2111-vivo-original-imag627uhcnzx7mn.jpeg?q=70,",
-                        price:"12,987"
-                      },
-                      {
-                        id:3,
-                        productname:"REDMI 10",
-                        img:"https://rukminim1.flixcart.com/image/416/416/l0tweq80/mobile/x/f/u/-original-imagcgtghym8theg.jpeg?q=70",
-                        price:"8,549"
-                      }]
-                    }
-                    // console.log(product);
-                    if(!localStorage.getItem("product")){
-            localStorage.setItem("product",JSON.stringify([]));
-            
-            }
-          
-          let item=JSON.parse(localStorage.getItem(product));
-          // console.log(item);
-          function show_product(){
-            document.getElementById("product_list").innerHTML=stringify(product);
-            console.log(product_list);
-            for(let i=0;i<product_list.length;i++){
-              let id_val=JSON.parse(localStorage.getItem("product"));
-              // console.log(id_val);
-            }
-            
-          }
+            let products=[
+    {    
+    product_name:"Mobiles",
+    img:"https://rukminim1.flixcart.com/image/416/416/l4n2oi80/mobile/x/o/a/-original-imagfhu75eupxyft.jpeg?q=70",
+    offer:"15% Discount",
+    productMenu:[  
+        {
+            id:1,
+            img:"https://rukminim1.flixcart.com/image/312/312/l4n2oi80/mobile/m/w/x/-original-imagfhu6bdzhnmkz.jpeg?q=70",            
+            p_name:"samsung f13",
+            price:"Rs:9499"
+        },
+        {
+            id:2,
+            img:"https://rukminim1.flixcart.com/image/312/312/l4n2oi80/mobile/m/w/x/-original-imagfhu6bdzhnmkz.jpeg?q=70",
+            p_name:"oppo ",
+            price:"Rs:10000"
+        },
+        {
+            id:3,
+            img:"https://rukminim1.flixcart.com/image/312/312/l4n2oi80/mobile/m/w/x/-original-imagfhu6bdzhnmkz.jpeg?q=70",
+            p_name:"vivo",
+            price:"Rs:15000"
+        },
+        
+      {
+        id:44,
+        img:"https://rukminim1.flixcart.com/image/312/312/l4n2oi80/mobile/x/o/a/-original-imagfhu75eupxyft.jpeg?q=70",
+        p_name:"realme",
+        price:"Rs:10500"
+    }
+    
+
+    ]
+  },
+  {    
+    product_name:"Kurthi",
+    img:"https://rukminim1.flixcart.com/image/570/684/xif0q/kurta/7/m/i/xxl-poshak-kurti-green-pinpoint-seller-original-imaggeyuczhnnqvz.jpeg?q=50",
+    offer:"15% Discount",
+    productMenu:[  
+        {
+            id:1,
+            img:"https://rukminim1.flixcart.com/image/570/684/xif0q/kurta/k/1/r/xxl-dk0009-dimonsher-original-imaggjh6pu7egaew.jpeg?q=50",
+            p_name:"long kuthi",
+            price:"Rs:500",
+            size:"S,M,L,XL"
+        },
+        {
+            id:2,
+            img:"https://rukminim1.flixcart.com/image/570/684/kqpj4i80/kurta/j/h/8/xl-ku632lgn-mokshi-original-imag4nmvvfny6vyf.jpeg?q=50",
+            p_name:"Trendy top",
+            price:"Rs:450",
+            size:"S,M,L,XL"
+        },
+        {
+            id:3,
+            img:"https://rukminim1.flixcart.com/image/570/684/kuwzssw0/kurta/e/t/n/s-jolly-shree-ramkrishna-fab-original-imag7xpnzndhervn.jpeg?q=50",
+            p_name:"short top",
+            price:"Rs:500",
+            size:"S,M,L,XL"
+        },
+        {
+              id:4,
+              img:"https://rukminim1.flixcart.com/image/570/684/kuwzssw0/kurta/e/t/n/s-jolly-shree-ramkrishna-fab-original-imag7xpnzndhervn.jpeg?q=50",
+              p_name:"plane top",
+              price:"Rs:500",
+              size:"S,M,L,XL"
+          },
+          {
+            id:5,
+            img:"https://rukminim1.flixcart.com/image/570/684/kuwzssw0/kurta/e/t/n/s-jolly-shree-ramkrishna-fab-original-imag7xpnzndhervn.jpeg?q=50",
+            p_name:"phoneix",
+            price:"Rs:500",
+            size:"S,M,L,XL"
+        }
+        ]
+  },
+  {    
+    product_name:"Appliances",
+    img:"https://media.istockphoto.com/photos/set-of-home-kitchen-appliances-in-the-room-on-the-wall-background-picture-id1196974664?s=612x612",
+    offer:"35% Discount",
+     productMenu:[  
+        {
+            id:1,
+            img:"https://rukminim1.flixcart.com/image/312/312/xif0q/electric-kettle/w/g/r/-original-imaggkhdr4thnypr.jpeg?q=70",
+           p_name:"flask",
+            price:"Rs:500",
+            size:"6,7,8,9"
+        },
+        {
+            id:2,
+            img:"https://rukminim1.flixcart.com/image/128/128/xif0q/kurta/3/n/y/s-4053-lee-moda-original-imag84eargmp3hmf-bb.jpeg?q=70",
+           p_name:"Trendy top",
+            price:"Rs:450",
+            size:"6,7,8,9"
+        },
+        {
+            id:3,
+            img:"https://rukminim1.flixcart.com/image/495/594/l09w8sw0/shoe/w/g/p/6-bck10090-grey-6-bucik-grey-original-imagc3nsvquxgzhu.jpeg?q=50",
+           p_name:"shoes",
+            price:"Rs:1500",
+            size:"6,7,8,9"
+        },
+        {
+          id:4,
+          img:"https://rukminim1.flixcart.com/image/612/612/ktszgy80/plate-tray-dish/k/k/6/melamine-pabel-printed-small-size-serving-plates-set-of-6-7-original-imag72jddxhjy6vh.jpeg?q=70",
+         p_name:"plates",
+          price:"Rs:500"
+      },
+      {
+        id:5,
+        img:"https://rukminim1.flixcart.com/image/312/312/l4n2oi80/mobile/x/o/a/-original-imagfhu75eupxyft.jpeg?q=70",
+       p_name:"phone",
+        price:"Rs:500",
+        size:"6,7,8,9"
+    }
+    ]
+  },
+  {    
+    product_name:"Footwears",
+    img:"https://rukminim1.flixcart.com/image/495/594/l13whow0/shoe/w/n/x/7-advnchr-41-nobelite-t-blue-original-imagcr3zf6haypzs.jpeg?q=50",
+    offer:"25% Discount",
+     productMenu:[  
+        {
+            id:1,
+            img:"https://rukminim1.flixcart.com/image/200/200/xif0q/bottle/u/g/p/1000-stainless-steel-2-1-litre-water-bottle-set-of-2-kimaya-original-imaggd3xcggqgseg.jpeg?q=70",
+           p_name:"flats",
+            price:"Rs:500",
+            size:"6,7,8,9"
+        },
+        {
+            id:2,
+            img:"https://rukminim1.flixcart.com/image/128/128/xif0q/kurta/3/n/y/s-4053-lee-moda-original-imag84eargmp3hmf-bb.jpeg?q=70",
+           p_name:"ballets",
+            price:"Rs:450",
+            size:"6,7,8,9"
+        },
+        {
+            id:3,
+            img:"https://rukminim1.flixcart.com/image/495/594/l09w8sw0/shoe/w/g/p/6-bck10090-grey-6-bucik-grey-original-imagc3nsvquxgzhu.jpeg?q=50",
+           p_name:"shoes",
+            price:"Rs:1500",
+            size:"6,7,8,9"
+        },
+        {
+          id:4,
+          img:"https://rukminim1.flixcart.com/image/612/612/ktszgy80/plate-tray-dish/k/k/6/melamine-pabel-printed-small-size-serving-plates-set-of-6-7-original-imag72jddxhjy6vh.jpeg?q=70",
+         p_name:"slippers",
+          price:"Rs:500"
+      },
+      {
+        id:5,
+        img:"https://rukminim1.flixcart.com/image/312/312/l4n2oi80/mobile/x/o/a/-original-imagfhu75eupxyft.jpeg?q=70",
+       p_name:"heel",
+        price:"Rs:500",
+        size:"6,7,8,9"
+    }
+    ]
+  },
+]
+  
+        
+if(! localStorage.getItem("flipart")){
+  localStorage.setItem("flipkart",JSON.stringify(products))
+  }
+function returnCards(products) {
+    return "<div class=\"row\"products-cards  \">" +products.map(title=> `
+    <div class= \"col-3\"card-item\" text-center \">
+   
+      <div class="product-header">
+      <a href="view.html?product_name=${title.product_name}"><img class=\"photos\"src="${title.img}"/></a>
+  
+      
+        <h4>${title.product_name}</h4>
+        <p>${title.offer}</p>
+      </div> 
+      
+    </div>`).join('') + "</div>";
+  //   return "<div class="card" style="width: 18rem;">
+  // <img class="card-img-top" src="..." alt="Card image cap"><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="#" class="btn btn-primary">Go somewhere</a></div>
+  // </div>
+    }
+  
+  document.getElementById("product_list").innerHTML = returnCards(products);
+  console.log(product_list);
 
           
           </script> 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="css/styleflip.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="clicked_productList" class="row">
+
+    </div>
+    <script>
+        const queryString= window.location.search;
+    const urlParams= new URLSearchParams(queryString);
+    const selected_product= urlParams.get('product_name');
+    alert(selected_product);
+ 
+    let clicked_productMenu=JSON.parse(localStorage.getItem("flipkart"));
+    // console.log(clicked_productMenu[0].productMenu[0]);
+    // console.log(clicked_productMenu);
+    for(let i=0;i<clicked_productMenu.length;i++){
+        if(selected_product==clicked_productMenu[i].product_name){
+            let items=clicked_productMenu[i].productMenu;
+            let element="";
+            for(let j=0;j<items.length;j++){
+                element+=`<div class="card" style="max-width: 540px;">
+                <div class="list card-body">
+                    <div class="  col-8">
+                    <img class="text-center" src="${items[j].img}" class="card-img-top" alt=""/>
+                      <h5 class=" text-center card-title">${items[j].p_name}</h5>
+                      <p class="text-center  card-text">${items[j].price}</p>
+                      <p class="text-center card-text">${items[j].size}</p>
+                      <p class="text-center card-text"><small class="text-muted">${items[j].about}</small></p>
+                    </div>
+                  </div>
+                  
+                
+              </div>`
+              document.getElementById("clicked_productList").innerHTML = element;
+            }
+        }
+    }
+    </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>  
+</html>

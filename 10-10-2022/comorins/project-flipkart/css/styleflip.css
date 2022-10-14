@@ -68,3 +68,34 @@ li{
 hr{
     background-color: antiquewhite;
 }
+.photos{
+    width:25%;
+}
+
+img{
+    width:100%;
+}
+.slide-1{
+    display:inline-block;
+    background-color: thistle;
+}
+.slide-2{
+    padding:10px 10px;
+}
+h5{
+    color:white;
+}
+.blur{
+    color:darkgray;
+}
+.list{
+    
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-around;
+ 
+}
